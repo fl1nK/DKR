@@ -1,6 +1,7 @@
 import random
 
 
+
 def task1(arr):
     for i in range(len(arr)):
         for j in range(len(arr)):
@@ -73,7 +74,7 @@ def get_graph_for_dijkstra(graph):
     return res
 
 
-graph = [[0, 1, 0, 0, 0], [1, 1, 0, 1, 0], [1, 0, 1, 0, 1], [0, 1, 1, 1, 1], [1, 0, 0, 0, 1]]
+
 
 PRIORITY = {1: ['+', '-'], 2: ['*', '/']}
 
@@ -160,6 +161,7 @@ def postfix_to_prefix(expression):
     res1 += (''.join(list(reversed(tmp))))
     return res1
 
+graph = [[0, 1, 0, 0, 0], [1, 1, 0, 1, 0], [1, 0, 1, 0, 1], [0, 1, 1, 1, 1], [1, 0, 0, 0, 1]]
 
 print(task1(graph))
 
